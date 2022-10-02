@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Incognito Message</title>
+  <link rel="stylesheet" href="cog.css">
+  <script src="https://kit.fontawesome.com/74914c7055.js" crossorigin="anonymous"></script>
+  <script src="cog.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="head"><i class="fa-solid fa-user-secret"></i></div>
+    <div class="row1"><h2></h2>You’ve gone Incognito</div>
+    <div class="row2"><p>Now you can browse privately, and other people who use this device won’t see your activity. However, downloads, bookmarks and reading list items will be saved. <a href="#">Learn more</a></p></div>
+    <div class="row3">
+      <div class="left">
+        <ul>
+          <h4>Chrome won’t save the following information:</h4>
+          <li>Your browsing history</li>
+          <li>Cookies and site data</li>
+          <li>Information entered in forms</li>
+        </ul>
+      </div>
+      <div class="right"><ul>
+        <h4>Your activity might still be visible to:</h4>
+        <li>Websites you visit</li>
+        <li>Your employer or school</li>
+        <li>Your internet service provider</li>
+      </ul></div>
+    </div>
+    <div class="row4">
+      <div class="row4-content">
+      <div class="3rd-party-cookies"><h3>Block third-party cookies</h3></div>
+      <p>When on, sites can't use cookies that track you across the web. Features on some sites may break.</p>
+    </div>
+    <!-- TOGGLE SWITCH -->
+
+    <div id="switch">
+      <div class="circle">
+    </div>
+
+    <!-- TOGGLE SWITCH SCRIPT -->
+    
+    <script>
+      document.querySelector('#switch').addEventListener("click", function(){
+        document.querySelector('#switch').classList.toggle('active')
+        // the important note here is that this .toggle ^^^ is
+        // not an id or a class its just syntaxx built into js that turns
+        // ON and OFF the active class
+      });
+    </script>
+
+
+
+    
+    <!--  
+     <a href="#"><button><i class="fa-solid fa-circle"></i></button></a> 
+     -->
+  </div>
+  </div>
+  
+</body>
+</html>
